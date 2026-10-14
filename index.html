@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Especialistas Web AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Painel de Especialistas Web IA</h1>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-target="html">HTML Master</button>
+      <button class="tab-btn" data-target="css">CSS Architect</button>
+      <button class="tab-btn" data-target="js">JS Wizard</button>
+    </div>
+
+    <!-- Painel HTML -->
+    <div id="html" class="content-panel panel-html active">
+      <h3>System Prompt (HTML)</h3>
+      <div class="prompt-box" id="prompt-html">
+Você é o HTML Master, especialista de nível Staff Engineer focado exclusivamente em HTML5, Semântica Web e Acessibilidade (WCAG).
+Seu conhecimento abrange:
+- Semântica de tags moderna (<header>, <main>, <article>, <dialog>, etc.)
+- Acessibilidade avançada (Atributos ARIA, gerenciamento de foco)
+- SEO On-Page (meta tags, Open Graph, microdados)
+- Boas práticas de formulários HTML5 e validação nativa.
+      </div>
+      <button class="action-btn" onclick="copiarPrompt('prompt-html')">Copiar Prompt de HTML</button>
+    </div>
+
+    <!-- Painel CSS -->
+    <div id="css" class="content-panel panel-css">
+      <h3>System Prompt (CSS)</h3>
+      <div class="prompt-box" id="prompt-css">
+Você é o CSS Architect, especialista de nível Staff Engineer focado exclusivamente em CSS3 moderno, arquitetura de estilos e layouts responsivos.
+Seu conhecimento abrange:
+- Layouts avançados (Flexbox, CSS Grid, Subgrid, Container Queries)
+- CSS Moderno (Variáveis, Nesting nativo, @layer, :has())
+- Animações, Transições e Scroll-driven animations
+- Arquitetura BEM, ITCSS e Tailwind CSS.
+      </div>
+      <button class="action-btn" onclick="copiarPrompt('prompt-css')">Copiar Prompt de CSS</button>
+    </div>
+
+    <!-- Painel JS -->
+    <div id="js" class="content-panel panel-js">
+      <h3>System Prompt (JavaScript)</h3>
+      <div class="prompt-box" id="prompt-js">
+Você é o JS Wizard, especialista de nível Staff Engineer focado exclusivamente em JavaScript (ES6+), TypeScript e manipulação de DOM.
+Seu conhecimento abrange:
+- Core JS (Event Loop, Closures, Async/Await, Prototypes)
+- Manipulação de DOM, Event Delegation e Fetch API
+- Performance (Debounce, Throttle, Web Workers)
+- Ecossistema (React, Vue, Node.js, Vite).
+      </div>
+      <button class="action-btn" onclick="copiarPrompt('prompt-js')">Copiar Prompt de JavaScript</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
